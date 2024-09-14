@@ -127,6 +127,8 @@ const isLiked = computed(() => likeStore.isLiked(props.repo.id));
   margin-top: 20px;
   font-weight: bold;
   text-align: center;
+  text-wrap: wrap;
+  word-break: break-all;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
