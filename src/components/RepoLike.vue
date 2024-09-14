@@ -25,7 +25,8 @@ defineProps<Props>();
   color: colors.$text-secondary;
   transition: all 0.2s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:active {
     transform: scale(1);
     color: colors.$red-100;
   }
@@ -35,7 +36,8 @@ defineProps<Props>();
     color: colors.$red-100;
     transition: all 0.2s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:active {
       transform: scale(0.9);
       color: colors.$text-secondary;
     }
