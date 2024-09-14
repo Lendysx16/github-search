@@ -11,6 +11,10 @@
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 body {

@@ -71,6 +71,11 @@ const isLiked = computed(() => likeStore.isLiked(props.repo.id));
   border-radius: 5px;
   background-color: colors.$second-bg;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    max-height: 100%;
+    padding: 5px;
+  }
 }
 
 .github-repo-card__info {
@@ -85,6 +90,12 @@ const isLiked = computed(() => likeStore.isLiked(props.repo.id));
 
   & span {
     text-align: end;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -117,6 +128,10 @@ const isLiked = computed(() => likeStore.isLiked(props.repo.id));
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
 }
 
 .github-repo-card__like {
@@ -124,5 +139,10 @@ const isLiked = computed(() => likeStore.isLiked(props.repo.id));
   top: 20px;
   right: 20px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    top: 5px;
+    right: 5px;
+  }
 }
 </style>
