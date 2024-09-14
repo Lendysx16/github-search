@@ -1,0 +1,54 @@
+{
+    "name": "github-test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src/ && stylelint ./src/**/*.{css,vue,scss}"
+    },
+    "engines": {
+        "node": ">=20.14"
+    },
+    "dependencies": {
+        "@types/lodash-es": "^4.17.5",
+        "@types/vue-ls": "^3.2.3",
+        "@vitejs/plugin-vue2": "^2.3.1",
+        "axios": "^0.19.2",
+        "pinia": "^2.1.7",
+        "pinia-plugin-persistedstate": "^4.0.1",
+        "v-clipboard": "^3.0.0-next.1",
+        "vite": "4.1.4",
+        "vue": "^2.7.16",
+        "vue-fragment": "^1.5.1",
+        "vue-ls": "^4.0.0",
+        "vue-property-decorator": "^9.1.2",
+        "vue-router": "^3.2.0"
+    },
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^4.2.1",
+        "@types/axios": "0.14.0",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "@vue/eslint-config-prettier": "^7.1.0",
+        "@vue/eslint-config-typescript": "^11.0.2",
+        "eslint": "^8.52.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "prettier": "2.8.8",
+        "sass": "1.32.0",
+        "sass-loader": "10.0.0",
+        "stylelint": "^14.7.1",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-prettier-scss": "^0.0.1",
+        "stylelint-config-standard-scss": "^3.0.0",
+        "stylelint-processor-html": "^1.0.0",
+        "typescript": "^4.1.6",
+        "unplugin-vue-components": "^0.26.0",
+        "vite-plugin-eslint": "^1.8.1",
+        "vite-plugin-stylelint": "^5.2.0",
+        "vite-plugin-vue2-svg": "^0.4.0",
+        "vue-template-compiler": "2.7.16"
+    }
+}
