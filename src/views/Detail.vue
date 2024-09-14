@@ -37,8 +37,7 @@ onMounted(() => {
 });
 
 const handleBack = () => {
-  if (router['previousRoute']) {
-    console.log(router['previousRoute']);
+  if (router['previousRoute'].name) {
     router.back();
   } else {
     router.push({ name: 'home' });
