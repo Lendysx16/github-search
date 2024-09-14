@@ -25,6 +25,12 @@ const searchParam = ref(
 );
 
 const handleSearch = () => {
+  if (!searchParam.value.trim()) {
+    isLoading.value = false;
+    githubStore.clearList();
+    return;
+  }
+
   isLoading.value = true;
 
   return githubStore
@@ -58,12 +64,6 @@ watch(
       return;
     }
 
-    if (!searchParam.value.trim()) {
-      isLoading.value = false;
-      githubStore.clearList();
-      return;
-    }
-
     debounsedSearch();
   },
   { immediate: true }
@@ -74,7 +74,7 @@ watch(
   <div class="list__container">
     <div class="list__searcher">
       <div class="list__searcher-input">
-        <my-input v-model="searchParam" />
+        <my-input v-model="searchParam" placeholder="Repository name" />
         <copy :text-to-copy="searchParam" />
       </div>
 

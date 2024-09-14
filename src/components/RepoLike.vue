@@ -28,7 +28,6 @@ defineProps<Props>();
   &:hover,
   &:active {
     transform: scale(1);
-    color: colors.$red-100;
   }
 
   &--liked {
@@ -39,7 +38,6 @@ defineProps<Props>();
     &:hover,
     &:active {
       transform: scale(0.9);
-      color: colors.$text-secondary;
     }
   }
 
