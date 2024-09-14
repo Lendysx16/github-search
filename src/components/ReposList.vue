@@ -60,6 +60,8 @@ watch(
   flex-direction: column;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
+  overflow-x: clip;
 
   &::-webkit-scrollbar {
     display: none;
