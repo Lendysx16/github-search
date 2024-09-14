@@ -93,9 +93,9 @@ const handleBack = () => {
       >
         <repo-like :is-liked="isLiked" />
       </div>
-    </div>
 
-    <div class="detail__back" @click="handleBack">Back</div>
+      <div class="detail__back" @click="handleBack">Back</div>
+    </div>
   </div>
 </template>
 
@@ -103,7 +103,6 @@ const handleBack = () => {
 @use '@/styles/colors';
 
 .detail {
-  position: relative;
   padding: 20px;
   width: 80%;
   margin: auto;
@@ -115,9 +114,10 @@ const handleBack = () => {
 
 .detail__back {
   position: absolute;
+  color: colors.$text-secondary;
   padding: 15px;
-  top: 40px;
-  left: -40px;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
 }
 

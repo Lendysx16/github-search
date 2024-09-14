@@ -118,6 +118,10 @@ watch(
   padding: 20px;
   width: 80%;
   margin: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 }
 
 .list__searcher-input {
@@ -154,5 +158,9 @@ watch(
 
 .list__searcher {
   width: 45%;
+
+  @media screen and (max-width: 768px) {
+    width: 48%;
+  }
 }
 </style>
