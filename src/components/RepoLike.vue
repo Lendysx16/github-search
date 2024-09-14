@@ -25,8 +25,7 @@ defineProps<Props>();
   color: colors.$text-secondary;
   transition: all 0.2s ease-in-out;
 
-  &:hover,
-  &:active {
+  &:hover {
     transform: scale(1);
     color: colors.$red-100;
   }
@@ -36,8 +35,7 @@ defineProps<Props>();
     color: colors.$red-100;
     transition: all 0.2s ease-in-out;
 
-    &:hover,
-    &:active {
+    &:hover {
       transform: scale(0.9);
       color: colors.$text-secondary;
     }
@@ -46,7 +44,8 @@ defineProps<Props>();
   @media screen and (max-width: 768px) {
     transform: scale(0.7);
 
-    &:hover {
+    &:hover,
+    &:active {
       transform: scale(0.7);
     }
 
@@ -54,7 +53,8 @@ defineProps<Props>();
       transform: scale(0.7);
     }
 
-    &--liked:hover {
+    &--liked:hover,
+    &--liked:active {
       transform: scale(0.7);
     }
   }
