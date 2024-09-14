@@ -149,10 +149,16 @@ watch(
 }
 
 .list__searcher-likes-header {
-  margin-bottom: 43px;
+  height: 44px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 91px;
+    height: 80px;
+    margin-bottom: 23px;
   }
 }
 
